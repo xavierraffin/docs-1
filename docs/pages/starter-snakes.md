@@ -13,6 +13,7 @@ The Battlesnake community provides a selection of basic Starter Snake projects t
 * [Java Starter Snake](https://github.com/battlesnakeio/starter-snake-java)
 * [JavaScript (Node) Starter Snake](https://github.com/battlesnakeio/starter-snake-node)
 * [Python Starter Snake](https://github.com/battlesnakeio/starter-snake-python)
+* [Ruby Starter Snake](https://github.com/battlesnakeio/starter-snake-ruby)
 
 These Starter Snake projects are built and maintained by the Battlesnake team. We do our best to keep these functional and up to date with the latest game features and API changes.
 
