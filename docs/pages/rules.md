@@ -1,74 +1,77 @@
 ---
 title: Battlesnake Game Rules
-subtitle: Updated September 2019
+subtitle: Updated October 2019
 permalink: /rules
 layout: card
 ---
 
-## Ways Your Snake Can Die
+## What is Battlesnake?
 
-Snakes can perish in the following ways:
-
-- **Wall collision.** Your snake ran into a wall, try turning.
-- **Self collision.** Your snake ran into itself, try turning less.
-- **Snake collision.** Your snake ran into another snake, try avoiding others.
-- **Head on collision.** Your snake collided head on with another snake.
-  - In this case, only the smaller snake dies. If both snakes are of equal size, both die.
-- **Starvation.** Your snake ran out of health, try finding food.
+Battlesnake is an autonomous survival game where your snake competes with others to find and eat food without being eliminated. To accomplish this, you will have to teach your snake to navigate the serpentine paths created by walls, other snakes, and their own growing tail without running out of energy.
 
 ---
 
-## Snake Health and Food
+## Winning the Game
 
-Your snake must eat food reguarly in order to stay alive. Your snake begins the game with 100 Health, and each turn its health will decrease by 1. If it reaches zero, your snake will die of starvation.
+Winning is quite simple: be the last snake slithering. But slithering takes health and space - if you run out of either, you’re eliminated.
 
-The only way to replenish your health is to eat food, which spawns throughout the board during the game. Moving your snake over a piece of food will consume it and reset your health to 100.
+#### Health and Movement
 
-Consuming food will also increase the length of your snake by 1 square.
+At the start of the game, your snake will be placed on the battlefield along with their opponents and everyone will have a full health meter. Every turn, your snake will be asked by the game to pick a direction: up, down, left, or right and, once they respond, they will move exactly one space in that direction. But slithering is hard work and moving that one space will drain your snake of one health.
 
----
+In order to restore that health, your snake needs to find and eat the traditional food of snakes: brightly colored circles. On the turn your snake’s head enters the space with the nutrition disc, they will immediately consume it resetting their health to maximum and increasing their length by one–one of many good reasons not to follow other snakes too closely (the view’s not great either).
 
-## Starting Positions
+#### Space
 
-TODO
+Snakes need more than just food to survive, they need space to roam and be free. However, in Battlesnake, space is limited. Every turn, your snake has to move into a new space, but so does every other snake. As all snakes grow, finding the best path through the remaining spaces gets harder and harder.
 
----
+Most importantly, the Battlesnake arena is surrounded by boundary walls - any snake attempting to sneak over one of these walls will be eliminated.
 
-## Food Spawn and Placement Rules
+#### Snake-on-Snake Contact
 
-* Games always begin with one piece of food per snake.
-* Food will spawn in random unoccupied squares.
-* At most one piece of food will spawn on any turn.
-* There's a calculated chance that food will spawn after any turn. This chance increases each turn and resets when food is spawned.
+Battlesnake is a battle of wits and honor. Snake-on-snake contact is only allowed when two snakes meet head-to-head. If your snake attempts to bite any snake’s body, including its own, it will be eliminated for unsportsnakelike conduct. When two snakes do meet head-to-head, the outcome is simple: the big snake stays, the little snake goes, so make sure your snake’s eyes aren’t bigger than its stomach.
 
 ---
 
-## Technical Limits and Rules
+## The Battlesnake Arena
 
-TODO
+Battlesnake is played on a rectangular board of variable size with up to 8 total snakes. At the beginning of the game, there will be one piece of food for each snake doing battle. Subsequent food will show up according to a Super Secret Proprietary Algorithm* and will also be placed randomly on the board. No more than one piece of food will ever appear in a single turn so get it while the gettin’s good.
+
+To eat a piece of food, your snake must move into the space that it’s in, this includes losing one health and fending off any other snakes that want to move into that space that turn. Consuming food costs no health, so a snake can eat when at 0 health and be rejuvenated in time to keep moving the next turn.
+
+_* the algorithm is neither secret nor proprietary, but it is arguably super. See it for yourself at [github.com/battlesnakeio/engine](github.com/battlesnakeio/engine)_
+
+#### Game Start
+
+Each snake starts out occupying a single space (turn 0) and will grow for the first two turns as it slithers into the arena.
 
 ---
 
-## Detailed Turn Mechanics
+## Programming Your Snake
 
-This section details how the engine executes a turn, including the order and priority of operations. The Battlesnake Game Engine is open source, and implementation details can be viewed at [github.com/battlesnakeio/engine](https://github.com/battlesnakeio/engine).
+Battlesnake is more than a game of snakes and nutritious floating orbs, it’s also about people and how they program those snakes. So it’s useful to understand exactly what happens during each turn.
 
-On every turn of the game:
+__Each turn in a Battlesnake game is divided into 3 parts:__
 
-1. Each snake, in parallel, is sent a /move request with the same board, food and snake information.
-  - Each snake is required to respond with a valid response (see [Official Snake API](/snake-api)).
-  - Snakes failing to respond within the timeout period will continue to move in the same direction as their last move. If this is the first move and there is no response from the snake, the direction will default to up.
-2. After all snakes have responded with their moves the engine will, for each snake:
-   - Move each snake by adding a new body part at the start of the body array in the direction moved.
-   - Reduce health by 1.
-   - Remove the final body segment.
-   - Check if the snake head is on top of food. If yes:
-      - Remove food and set snake health to 100.
-      - Duplicate the last segment in the body array (this will cause the snake to grow on the following turn).
-   - Check if snake has died (see Snake Deaths). If yes:
-      - Mark snake as dead.
-   - Check if food needs to be spawned (see Food Spawn Rules). If yes:
-      - Spawn food.
-3. Send any dead snakes the /end request (ignore response).
-4. If there are two or more snakes alive, go back to step 1 and repeat.
-5. The final snake alive has won! Send it the /end request.
+#### 1) The Battlesnake server sends board information every snake.
+
+The game server will send to each snake, in parallel, a /move request with information about the current state of the game board. This gamestate includes the location of every piece of food on the board as well as the health and spaces occupied by all snakes. There is also some meta information about the game like an id, turn #, and board dimensions for those bobby fischer snakes out there playing multiple games at once.
+
+#### 2) Each snakes responds with their move.
+
+After receiving information about the board, each snake has to respond with a move of "up", "down", "left", or "right" within the allowed timeout period. You can find more specific details on what this response should look like in the [Official Snake API](https://docs.battlesnake.com/snake-api). If your snake’s cybernetic brain fails to provide a valid response in time, instinct kicks in and they will continue moving in the same direction as the previous turn (on the first turn, this defaults to up) even if it means certain doom.
+
+#### 3) Turn resolution.
+
+At the end of the timeout period (or as soon as all snakes have responded with a move), the Battlesnake server will resolve all snake movements and update the board and snake statuses accordingly. This happens in a very specific order:
+
+1. Each snake will have their health reduced by one.
+2. Each snake will have a new body part added to the board in the next space in their chosen direction. This will be their new head.
+3. Each snake will have their last body part (their tail) removed from the board.
+4. Any snake that's found a nutrition disc gets to eat:
+  * Snakes that have eaten food have their health reset to maximum
+  * Snakes that have eaten food this turn receive an additional body part placed on top of their current tail. This will extend their visible length by one on the next turn.
+  * Eaten food is removed from the board
+5. Any snake that has run into a wall, themselves, or another snake will be eliminated, removed from the board, have their status updated, and be notified with an /end request (no response necessary).
+6. Potentially place a new piece of food on the board, according to game parameters and food spawn algorithm.
+7. If there are at least two snakes still slithering, proceed to next turn. Otherwise inform the remaining snake of its victory with an /end request and end the game.
