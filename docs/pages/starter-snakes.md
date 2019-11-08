@@ -22,7 +22,8 @@ These Starter Snake projects are built and maintained by the Battlesnake team. W
 ## Community Starter Snakes
 
 * [Kotlin Starter Snake](https://github.com/athenian-programming/starter-snake-kotlin) by [Athenian Programming](https://github.com/athenian-programming)
-* [Rust(y) Snake](https://github.com/mcraealex/rustysnake) by [McRawAlex](https://github.com/McRaeAlex)
+* [Rust(y) Snake](https://github.com/mcraealex/rustysnake) by [McRaeAlex](https://github.com/McRaeAlex)
+* [AzureSnake (Node.js)](https://github.com/mcraealex/AzureSnake) by [McRaeAlex](https://github.com/McRaeAlex)
 
 **Want to submit your Starter Snake project?** Wonderful! You can [submit a pull request or create an issue](https://github.com/battlesnakeio/docs) and we'll take a look. Community created Starter Snakes must contain the following before being listed:
 
