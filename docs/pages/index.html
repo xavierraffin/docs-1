@@ -1,5 +1,5 @@
 ---
-title: Battlesnake Docs
+title: Getting Started
 permalink: /
 layout: page
 ---
@@ -9,65 +9,180 @@ layout: page
     <div class="card">
       <div class="card-body">
         <div class="row">
-          <div class="col-lg-6">
-            <h2>Your snake receives JSON game data</h2>
-            <pre class="m-0">
-<code class="p-20 json">{
-  "game": {
-    "id": "game-id-string"
-  },
-  "turn": 1,
-  "board": {
-    "height": 11,
-    "width": 11,
-    "food": [{
-      "x": 1,
-      "y": 3
-    }],
-    "snakes": [{
-      "id": "snake-id-string",
-      "name": "Sneky Snek",
-      "health": 100,
-      "body": [{
-        "x": 1,
-        "y": 3
-      }]
-    }]
-  },
-  "you": {
-    "id": "snake-id-string",
-    "name": "Sneky Snek",
-    "health": 100,
-    "body": [{
-      "x": 1,
-      "y": 3
-    }]
-  }
-}</code>
-            </pre>
+          <div class="col">
+            <h2>What is Battlesnake?</h2>
+            <p>
+              A Battlesnake is a programmed web server that implements the <a href="/snake-api"
+                target="_blank">Battlesnake HTTP API</a> to play the game snake against other Battlesnakes. When a game
+              is running, the Battlesnake Game Engine will make HTTP requests to your server, sending you game
+              information and asking for your next move.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-sm-8">
+            <h2>Step 1 - Build Your Snake</h2>
+            <p>
+              Select a technology you want to use to program your snake. Anything that can process a web request and be
+              deployed to the internet will work.
+              There are several <a href="/starter-snakes">Starter Snakes</a> that can be used as a base if you
+              don't want to start from scratch. Each is built with a popular programming language and web application
+              framework.
+            </p>
+            <div>
+              <p>
+                Your Battlesnake must support 4 endpoints that will be called by the Game Engine:
+              </p>
+              <div class="card-body">
+                <dl class="row">
+                  <dt class="col-sm-2">
+                    <p><a href="/snake-api#tag/endpoints/paths/~1ping/post">/ping</a></p>
+                  </dt>
+                  <dd class="col-sm-9">
+                    <p>The engine is asking your snake if it is alive</p>
+                  </dd>
+                </dl>
+                <dl class="row">
+                  <dt class="col-sm-2">
+                    <p><a href="/snake-api#tag/endpoints/paths/~1start/post">/start</a></p>
+                  </dt>
+                  <dd class="col-sm-9">
+                    <p>Notifies your snake that it is participating in a new game</p>
+                  </dd>
+                </dl>
+                <dl class="row">
+                  <dt class="col-sm-2">
+                    <p><a href="/snake-api#tag/endpoints/paths/~1move/post">/move</a></p>
+                  </dt>
+                  <dd class="col-sm-9">
+                    <p>Updates your snake with the current state of the game board and asks for a move</p>
+                  </dd>
+                </dl>
+                <dl class="row">
+                  <dt class="col-sm-2">
+                    <p><a href="/snake-api#tag/endpoints/paths/~1end/post">/end</a></p>
+                  </dt>
+                  <dd class="col-sm-9">
+                    <p>Notifies your snake that the game is over.</p>
+                  </dd>
+                </dl>
+              </div>
+              <p>Each endpoint will be sent a JSON data blob by the Game Engine and your server must respond with a 200
+                status code and an appropriate
+                JSON response. The protocol for these requests and responses are defined in detail
+                in the <a href="/snake-api" target="_blank">Battlesnake API<i class="dripicons dripicons-exit"
+                    style="margin-left: 5px;"></i></a> docs.</p>
+            </div>
+          </div>
+          <div class="col col-sm-4">
+            <div class="alert alert-secondary alert-outline alert-dismissible fade show" role="alert">
+
+              <h5 class="mt-0 text-secondary">
+                <svg class="float-left m-r-10" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="20"
+                  height="20" style="fill:#32C1DB">
+                  <circle fill="none" cx="13" cy="29" r="9" />
+                  <path
+                    d="M88 57l11-11a3 3 0 0 0-4-5L82 54H43l48-38V0H0v100h89L44 60h38l13 13a3 3 0 0 0 4-5zM13 38a9 9 0 1 1 10-9 9 9 0 0 1-10 9z" />
+                </svg>
+                Snake Wisdom - Concurrent Games
+              </h5>
+              <p class="text-secondary">Your
+                Battlesnake is a live web service and could be playing multiple games at
+                the
+                same time. The
+                <strong>/start</strong>, <strong>/move</strong> and <strong>/end</strong> requests will all
+                contain
+                a Game ID that uniquely identifies which game the request is for. You should develop your snake to
+                handle requests from different games at the same time.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-sm-8">
+            <h2>Step 2 - Deploy Your Snake</h2>
+            <p>
+              Before your snake can do battle, it must be deployed to a publicly accessible server. This can be done
+              using
+              a
+              cloud hosting provider such as <a href="https://www.heroku.com/" target="_blank">Heroku</a> or <a
+                href="https://aws.amazon.com/" target="_blank">Amazon Web Services</a>. Many of these services provide a
+              free tier
+              for
+              deploying web servers.
+            </p>
+            <p>
+              Many of the <a href="/starter-snakes">Starter Snakes</a> have instructions on how to deploy the snakes to
+              a public Heroku instance so you can get started quickly.
+            </p>
           </div>
 
-          <div class="col-lg-6">
-            <h2>...and your code returns your move</h2>
-            <pre class="m-0">
-<code class="p-20 python">import bottle
-import json
-import random
-from bottle import HTTPResponse
+          <div class="col col-sm-4">
+            <div class="alert alert-secondary alert-outline alert-dismissible fade show" role="alert">
 
-@bottle.post('/move')
-def move():
-    data = bottle.request.json
+              <h5 class="mt-0 text-secondary">
+                <svg class="float-left m-r-10" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="20"
+                  height="20" style="fill:#32C1DB">
+                  <circle fill="none" cx="13" cy="29" r="9" />
+                  <path
+                    d="M88 57l11-11a3 3 0 0 0-4-5L82 54H43l48-38V0H0v100h89L44 60h38l13 13a3 3 0 0 0 4-5zM13 38a9 9 0 1 1 10-9 9 9 0 0 1-10 9z" />
+                </svg>Snake Wisdom - Don’t Take Too Long
+              </h5>
+              <p class="text-secondary">The Game Engine gives snakes 500 ms to respond to a <strong>/move</strong>
+                request, including any network time. If your snake does not respond in time, the engine
+                will reuse the move from the previous turn.</p>
+            </div>
+          </div>
 
-    # Do some simple or complex processing here
-    # of the data given the board state,
-    # and return your snake direction!
+        </div>
+        <div class="row">
+          <div class="col col-sm-8">
+            <h2>Step 3 - Register Your Snake</h2>
+            <p>
+              Once your snake is operational, it needs to be registered on the Battlesnake website. Click on the button
+              below to setup a new snake.</p>
+            <p>
+              <a href="https://play.battlesnake.com/account/snakes/create/" target="_blank"
+                class="btn btn-primary btn-rounded">Create A Snake</a>
+            </p>
+          </div>
 
-    directions = ['up', 'down', 'left', 'right']
-    move = random.choice(directions)
+          <div class="col col-sm-4">
+            <div class="alert alert-secondary alert-outline alert-dismissible fade show" role="alert">
 
-    return {"move": move}</code>
-            </pre>
+              <h5 class="mt-0 text-secondary">
+                <svg class="float-left m-r-10" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="20"
+                  height="20" style="fill:#32C1DB">
+                  <circle fill="none" cx="13" cy="29" r="9" />
+                  <path
+                    d="M88 57l11-11a3 3 0 0 0-4-5L82 54H43l48-38V0H0v100h89L44 60h38l13 13a3 3 0 0 0 4-5zM13 38a9 9 0 1 1 10-9 9 9 0 0 1-10 9z" />
+                </svg>Snake Wisdom - Names
+              </h5>
+              <p class="text-secondary">Be creative with your snake's name and description! Names like <em>test</em> or
+                <em>snake1</em>
+                are boring and fail to tell people about the character of your snake. That said, creativity has limits
+                and make sure not to violate the Battlesnake <a href="https://play.battlesnake.com/about/conduct/">Code
+                  of
+                  Conduct</a>.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <h2>Step 4 - Battle With Your Snake</h2>
+            <p>
+              You are now ready to test your snake against others in live games.</p>
+            <ol>
+              <li>Go to your snake's profile page on the Battlesnake website</li>
+              <li>Click on the <strong>Play Game</strong> button. You will see a form with your snake
+                preselected.</li>
+              <li>Use the <strong>Add a Random Snake</strong> button to add a challenger</li>
+              <li>Click on <strong>Create Game</strong> button to start the game</li>
+            </ol>
+            </p>
+            <p>
+              You will be rewarded with a view of the board that includes your snake and the challenger. Click on the
+              Play button at the bottom of the board to start the match and see who wins!
+            </p>
           </div>
         </div>
       </div>
