@@ -98,6 +98,34 @@ Find your favorite snake head and tail from the options below and use the name i
 				<img class="justify-self-start mr-2 w-40" src="/assets/images/snake/head/tongue.svg" alt="tongue snake head"/>
 				<p class=" font-size-16 m-0 pl-4 pl-sm-2 pl-md-4">tongue</p>
 			</li>
+			<li class="list-group-item d-flex align-items-center">
+				<img class="justify-self-start mr-2 w-40" src="/assets/images/snake/head/bwc-bonhomme.svg" alt="bwc-bonhomme snake head"/>
+				<p class=" font-size-16 m-0 pl-4 pl-sm-2 pl-md-4">bwc-bonhomme</p>
+			</li>
+			<li class="list-group-item d-flex align-items-center">
+				<img class="justify-self-start mr-2 w-40" src="/assets/images/snake/head/bwc-earmuffs.svg" alt="bwc-earmuffs snake head"/>
+				<p class=" font-size-16 m-0 pl-4 pl-sm-2 pl-md-4">bwc-earmuffs</p>
+			</li>
+			<li class="list-group-item d-flex align-items-center">
+				<img class="justify-self-start mr-2 w-40" src="/assets/images/snake/head/bwc-rudolph.svg" alt="bwc-rudolph snake head"/>
+				<p class=" font-size-16 m-0 pl-4 pl-sm-2 pl-md-4">bwc-rudolph</p>
+			</li>
+			<li class="list-group-item d-flex align-items-center">
+				<img class="justify-self-start mr-2 w-40" src="/assets/images/snake/head/bwc-scarf.svg" alt="bwc-scarf snake head"/>
+				<p class=" font-size-16 m-0 pl-4 pl-sm-2 pl-md-4">bwc-scarf</p>
+			</li>
+			<li class="list-group-item d-flex align-items-center">
+				<img class="justify-self-start mr-2 w-40" src="/assets/images/snake/head/bwc-ski.svg" alt="bwc-ski snake head"/>
+				<p class=" font-size-16 m-0 pl-4 pl-sm-2 pl-md-4">bwc-ski</p>
+			</li>
+			<li class="list-group-item d-flex align-items-center">
+				<img class="justify-self-start mr-2 w-40" src="/assets/images/snake/head/bwc-snow-worm.svg" alt="bwc-snow-worm snake head"/>
+				<p class=" font-size-16 m-0 pl-4 pl-sm-2 pl-md-4">bwc-snow-worm</p>
+			</li>
+			<li class="list-group-item d-flex align-items-center">
+				<img class="justify-self-start mr-2 w-40" src="/assets/images/snake/head/bwc-snowman.svg" alt="bwc-snowman snake head"/>
+				<p class=" font-size-16 m-0 pl-4 pl-sm-2 pl-md-4">bwc-snowman</p>
+			</li>
 		</ul>
 	</div>
 	<div class="col-12 col-sm-5  p-25 card-body">
@@ -150,6 +178,22 @@ Find your favorite snake head and tail from the options below and use the name i
 			<li class="list-group-item d-flex align-items-center">
 				<img class="justify-self-start mr-2 w-40" src="/assets/images/snake/tail/small-rattle.svg" alt="small-rattle snake head"/>
 				<p class=" font-size-16 m-0 pl-4 pl-sm-2 pl-md-4">small-rattle</p>
+			</li>
+			<li class="list-group-item d-flex align-items-center">
+				<img class="justify-self-start mr-2 w-40" src="/assets/images/snake/tail/bwc-bonhomme.svg" alt="bwc-bonhomme snake tail"/>
+				<p class=" font-size-16 m-0 pl-4 pl-sm-2 pl-md-4">bwc-bonhomme</p>
+			</li>
+			<li class="list-group-item d-flex align-items-center">
+				<img class="justify-self-start mr-2 w-40" src="/assets/images/snake/tail/bwc-flake.svg" alt="bwc-flake snake tail"/>
+				<p class=" font-size-16 m-0 pl-4 pl-sm-2 pl-md-4">bwc-flake</p>
+			</li>
+			<li class="list-group-item d-flex align-items-center">
+				<img class="justify-self-start mr-2 w-40" src="/assets/images/snake/tail/bwc-ice-skate.svg" alt="bwc-ice-skate snake tail"/>
+				<p class=" font-size-16 m-0 pl-4 pl-sm-2 pl-md-4">bwc-ice-skate</p>
+			</li>
+			<li class="list-group-item d-flex align-items-center">
+				<img class="justify-self-start mr-2 w-40" src="/assets/images/snake/tail/bwc-present.svg" alt="bwc-present snake tail"/>
+				<p class=" font-size-16 m-0 pl-4 pl-sm-2 pl-md-4">bwc-present</p>
 			</li>
 		</ul>
 	</div>
