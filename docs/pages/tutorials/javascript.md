@@ -64,7 +64,7 @@ state of the game.  It also comes pre-packaged with a UI to see your snake runni
 ```bash
 mkdir battlesnake-engine
 cd battlesnake-engine
-wget -qO- `curl -s https://api.github.com/repos/battlesnakeio/engine/releases/latest \
+wget -qO- `curl -s https://api.github.com/repos/battlesnakeofficial/engine/releases/latest \
     | jq -r ".assets[] | select(.name) | .browser_download_url" | grep Linux | grep 64` \
     | tar zxv
 ```
@@ -95,7 +95,7 @@ snake.
 Lets download it with the git command:
 
 ```bash
-git clone git://github.com/battlesnakeio/starter-snake-node.git
+git clone git://github.com/battlesnakeofficial/starter-snake-node.git
 ```
 
 The snake will now exist in a directory called `starter-snake-node`

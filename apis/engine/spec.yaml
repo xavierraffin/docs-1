@@ -215,11 +215,11 @@ components:
           description: the hex code of the color of the snake
         HeadType:
           type: string
-          description: the vector head to display, list here https://github.com/battlesnakeio/board/tree/master/public/images/snake/head
+          description: the vector head to display, list here https://github.com/battlesnakeofficial/board/tree/master/public/images/snake/head
           enum: [dead evil fang safe bendr pixel silly smile beluga shades tongue regular sand-worm]
         TailType:
           type: string
-          description: the vector tail to display, list here https://github.com/battlesnakeio/board/tree/master/public/images/snake/tail
+          description: the vector tail to display, list here https://github.com/battlesnakeofficial/board/tree/master/public/images/snake/tail
           enum: [bolt hook pixel sharp curled skinny regular freckled block-bum round-bum fat-rattle small-rattle]
 
     DeathCause:
@@ -232,4 +232,3 @@ components:
         Turn:
           type: integer
           description: this is the turn that the snake died on
-          

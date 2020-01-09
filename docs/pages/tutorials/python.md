@@ -42,14 +42,14 @@ The Engine is the piece of software that talks to your snake and asks it what mo
 
 ### Step 2.1 - Download the Engine
 
-* Go to <https://github.com/battlesnakeio/engine/releases/latest> and download the `Windows_x86_64.zip` file.
+* Go to <https://github.com/battlesnakeofficial/engine/releases/latest> and download the `Windows_x86_64.zip` file.
 * Once downloaded, open Windows Explorer and navigate to your Downloads folder. Right-click and extract the downloaded ZIP file. It will extract into a folder of the same name.
 
 ---
 
 ### Step 2.2 - Run the Engine
 
-Engine has a "dev" mode allows you to access a development environment that runs completely local to your machine. Running the engine in this way allows you to make quick iterations to your snake before putting it up on <https://play.battlesnake.io>.
+Engine has a "dev" mode allows you to access a development environment that runs completely local to your machine. Running the engine in this way allows you to make quick iterations to your snake before putting it up on <https://play.battlesnake.com>.
 
 * Open the folder with the game engine
 * Shift + Right Click and select "Open command window here"
@@ -65,9 +65,9 @@ What you should see is a web-based environment to test your snake locally before
 
 ### 3.1 - Download the Python starter snake
 
-All the starter snakes are on github at <https://github.com/battlesnakeio/community/blob/master/starter-snakes.md>. You don't need a github account to download the Python starter snake, however this guide assumes you do have a github account (it's free).
+All the starter snakes are on github at <https://github.com/battlesnakeofficial/community/blob/master/starter-snakes.md>. You don't need a github account to download the Python starter snake, however this guide assumes you do have a github account (it's free).
 
-* Go to <https://github.com/battlesnakeio/starter-snake-python>
+* Go to <https://github.com/battlesnakeofficial/starter-snake-python>
 * It is highly recommended to **Fork** the repository. This creates your own personal copy of the starter snake, so you can modify it and upload the changes. Go to the top right corner of the page and hit "Fork".
 * Now you will want to **clone** the repository. Cloning places a copy of all the files from the repository onto your computer so you can modify them.
 * You can get a link for cloning your repository by clicking "Clone or Download" and copying the link (we will use it below).

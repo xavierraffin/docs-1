@@ -12,7 +12,7 @@ https://jekyllrb.com/docs/installation/
 
 2. Clone this repo
 ```
-git clone https://github.com/battlesnakeio/docs
+git clone https://github.com/battlesnakeofficial/docs
 ```
 
 3. Install and run

@@ -8,34 +8,32 @@ We believe in the power of collaboration to make products great, so we want your
 
 
 ## Our Roadmap and Github
-[Find our Roadmap in Github here](https://github.com/battlesnakeio/roadmap)
+[Find our Roadmap in Github here](https://github.com/battlesnakeofficial/roadmap)
 
-We use Github issues to keep track of any improvements that could be made to Battlesnake. Head to our [Github Roadmap](https://github.com/battlesnakeio/roadmap) to find out what the issues Battlesnake community has identified and pick one out to work on or make your own issue and let us know what could be improved.
+We use Github issues to keep track of any improvements that could be made to Battlesnake. Head to our [Github Roadmap](https://github.com/battlesnakeofficial/roadmap) to find out what the issues Battlesnake community has identified and pick one out to work on or make your own issue and let us know what could be improved.
 
 #### Quick Links to Get Started
-- [More on how to contribute](https://github.com/battlesnakeio/community/blob/master/CONTRIBUTING.md)
-- [Find a good first issues to solve](https://github.com/battlesnakeio/roadmap/issues?q=is%3Aissue+is%3Aopen+label%3Agood-first-issue)
-- [Check out our community page](https://github.com/battlesnakeio/community)
-- [Want to Write Docs? Here are some docs we need!](https://github.com/battlesnakeio/roadmap/issues?q=is%3Aissue+is%3Aopen+label%3Arepo%2Fdocs)
+- [More on how to contribute](https://github.com/battlesnakeofficial/community/blob/master/CONTRIBUTING.md)
+- [Want to Write Docs? Here are some docs we need!](https://github.com/BattlesnakeOfficial/docs/issues)
 
 ---
 
 ## The Battlesnake Slack Channel
- [Sign in to the Battlesnake Slack](https://play.battlesnake.io/slack/)
+ [Sign in to the Battlesnake Slack](https://play.battlesnake.com/slack/)
 
  Slack is a chat application that allows the Battlesnake community to connect and collaborate across the world. Join us on slack to find out more about what the Battlesnake community is working on.
 
 ---
 
 ## Check Out Our Code of Conduct
-[Code of Conduct](https://play.battlesnake.io/about/conduct/)
+[Code of Conduct](https://play.battlesnake.com/about/conduct/)
 
 Please read our code of conduct and keep the values of Battlesnake in mind while you write code or documentation.
 
 ---
 
 ## A Few Tips for Writing Documentation
-Our documentation lives [here in our docs repository](https://github.com/battlesnakeio/docs) as markdown files. We are always learning how to write better documentation for everyone, here are some tips we found useful for writing docs to get you started.
+Our documentation lives [here in our docs repository](https://github.com/battlesnakeofficial/docs) as markdown files. We are always learning how to write better documentation for everyone, here are some tips we found useful for writing docs to get you started.
 
 
 #### Informative and friendly

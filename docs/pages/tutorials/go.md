@@ -26,7 +26,7 @@ Go to https://github.com/join to create an account, and choose the free option.
 
 Forking a GitHub repo lets you copy source code from an open source project to your own GitHub repo.
 
-There is a repo that contains example Golang code to run a very basic battle snake, and you can fork it here: https://github.com/battlesnakeio/starter-snake-go/fork
+There is a repo that contains example Golang code to run a very basic battle snake, and you can fork it here: https://github.com/battlesnakeofficial/starter-snake-go/fork
 
 ---
 
@@ -58,13 +58,13 @@ It will tell you that an application is running on port 9000, and show a button 
 
 Now that the starter snake is running, you can put it in the ring!
 
-Go to play.battlesnake.io, go to `My Snakes` (log in with your GitHub), and `Add a Snake`. Choose your name, and use the URL from step 1.4.
+Go to play.battlesnake.com, go to `My Snakes` (log in with your GitHub), and `Add a Snake`. Choose your name, and use the URL from step 1.4.
 
 ---
 
 #### Create a game
 
-on play.battlesnake.io, go to `Create a game`. On the field `Add snakes to the pit`, search for the snake name you just made and click `Add`. You can add other snakes too.
+on play.battlesnake.com, go to `Create a game`. On the field `Add snakes to the pit`, search for the snake name you just made and click `Add`. You can add other snakes too.
 
 click `Create Game` and it will go into the player. At the bottom of the player, hit `play`. Your snake should go straight to the bottom, since that's all the starter snake knows how to do.
 
@@ -121,7 +121,7 @@ func Move(res http.ResponseWriter, req *http.Request) {
 
 In the terminal, cancel the last `make run` command by hitting ctrl-c. Then start `make run` again. Now it will be running the new code.
 
-In play.battlesnake.io, hit the back button to go back to `Create Game` and run it with your snake in the ring again. Now it should be doing something slightly more interesting.
+In play.battlesnake.com, hit the back button to go back to `Create Game` and run it with your snake in the ring again. Now it should be doing something slightly more interesting.
 
 ---
 

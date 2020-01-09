@@ -39,7 +39,7 @@ Battlesnake is played on a rectangular board of variable size, with up to 8 tota
 
 To eat a piece of food, your snake must move into the space that contains the food, this includes losing one health and fending off any other snakes that want to move into that space that turn. Consuming food costs no health, so a snake can eat when at 0 health and be rejuvenated in time to keep moving on the next turn.
 
-_* the algorithm is neither secret nor proprietary, but it is arguably super. See it for yourself at [github.com/battlesnakeio/engine](https://github.com/battlesnakeio/engine)_
+_* the algorithm is neither secret nor proprietary, but it is arguably super. See it for yourself at [github.com/battlesnakeofficial/engine](https://github.com/battlesnakeofficial/engine)_
 
 #### Game Start
 
