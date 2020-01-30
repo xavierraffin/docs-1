@@ -18,7 +18,6 @@ Bounty Snake Prizes can be equally creative - sometimes they’re simple giveawa
 
 As part of the event all Bounty Snake sponsors may also submit their snake into the special Bounty Snake Tournament that will be featured on the main stage. Bounty Snakes will then be pitted against each other for the entertainment of all participants, with the tournament winner becoming Bounty Snake Champion. The champion sponsor will earn a trophy that can be displayed on their table and help them stand out from the other bounty snakes.
 
-   
 
 ## Creating an Engaging Bounty Snake
 
