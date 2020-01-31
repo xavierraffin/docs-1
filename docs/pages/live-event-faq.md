@@ -7,7 +7,7 @@ layout: card
 [General Questions](#general-questions)<br/>
 [I’m New to Battlesnake](#im-new-to-battlesnake)<br/>
 [I’m a Battlesnake Veteran](#im-a-battlesnake-veteran)<br/>
-[Can I Just Come to Watch?](#can-i-just-come-to-watch?)<br/>
+[Can I Just Come to Watch?](#can-i-just-come-to-watch)<br/>
 [I’m Interested in Sponsoring Battlesnake](#im-interested-in-sponsoring-battlesnake)<br/>
 [T-Shirts, Twitch Stream, and A Surprise or Two](#t-shirts-twitch-stream-and-a-surprise-or-two)<br/>
 
