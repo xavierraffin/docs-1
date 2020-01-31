@@ -1,7 +1,7 @@
 ---
-title: Frequently Asked Questions
+title: Developer - Frequently Asked Questions
 permalink: /faq
-subtitle: Have a question that isn't answered? <a href="mailto:hello@battlesnake.com">Let us know.</a>
+subtitle: 
 layout: card
 ---
 
@@ -22,3 +22,7 @@ You can build your snake using any technology you want! It doesn't have to be ma
 #### What cloud provider and region is play.battlesnake.com hosted in?
 
 The current game engine is hosted on Google Cloud Platform, in the `US-WEST1` (Oregon) region. It's possible, but unlikely this could change in the future. It's more likely that we'll expand the engine to include multiple and configurable regions.
+
+---
+
+Have a question that isn't answered? <a href="mailto:hello@battlesnake.com">Let us know.</a>
