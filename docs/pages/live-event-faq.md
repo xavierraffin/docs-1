@@ -198,7 +198,10 @@ This year we’re testing an ‘International Division’ for Battlesnake develo
 
 ---
 
-Can I Just Come to Watch?
+### Can I Just Come to Watch?
+
+---
+
 #### I’m not a programmer - why would I want to attend?
 Battlesnake is really fun and exciting to watch.
 
