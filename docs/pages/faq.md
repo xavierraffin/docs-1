@@ -25,4 +25,21 @@ The current game engine is hosted on Google Cloud Platform, in the `US-WEST1` (O
 
 ---
 
+#### How does food spawn on the board?
+
+The algorithm that generates food is very simple. Each turn the engine evaluates the board and determines if there is any food. If no food is found, a piece of food will spawn. If food is found, there is a 15% chance that another piece of food will spawn. When food spawns, it will appear in random, open location on the board. If there are no open locations on the board, no food will spawn.
+
+```python
+# pseudocode example
+chance = 15%
+if no food on board:
+    chance = 100%
+if random(chance):
+    spawn food in random empty square
+```
+
+If you are interested in the implementation fo the algorithm, check out the [Rules](https://github.com/BattlesnakeOfficial/rules) project on GitHub.
+
+---
+
 Have a question that isn't answered? <a href="mailto:hello@battlesnake.com">Let us know.</a>
