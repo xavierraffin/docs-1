@@ -4,7 +4,7 @@ permalink: /tutorials/python
 layout: card
 ---
 
-**NOTE: This tutorial is outdated and needs to be updated for the 2020 Game Engine. Please see the [Python Starter Snake](https://github.com/battlesnakeofficial/starter-snake-python) for instructions on getting started using Python and Heroku.**
+<p class="alert alert-danger"><strong>NOTE: This tutorial is outdated and needs to be updated for the 2020 Game Engine. Please see the <a href="https://github.com/battlesnakeofficial/starter-snake-python">Python Starter Snake</a> for instructions on getting started using Python and Heroku.</strong></p>
 
 This document will allow you to start developing a Battlesnake snake AI on a Windows 10/8/7 computer using the Python programming language.
 
