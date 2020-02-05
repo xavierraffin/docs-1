@@ -4,7 +4,7 @@ permalink: /tutorials/javascript
 layout: card
 ---
 
-**NOTE: This tutorial is outdated and needs to be updated for the 2020 Game Engine. Please see the [Node Starter Snake](https://github.com/battlesnakeofficial/starter-snake-node) for instructions on getting started using JavaScript and Heroku.**
+<p class="alert alert-danger"><strong>NOTE: This tutorial is outdated and needs to be updated for the 2020 Game Engine. Please see the <a href="https://github.com/battlesnakeofficial/starter-snake-node">Node Starter Snake</a> for instructions on getting started using JavaScript and Heroku.</strong></p>
 
 This document takes you from a blank Ubuntu computer to a running snake that you can view in your browser.
 The programming language used in this document is NodeJS a JavaScript based language.
