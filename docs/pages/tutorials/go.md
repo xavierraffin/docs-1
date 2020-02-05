@@ -4,6 +4,8 @@ permalink: /tutorials/go
 layout: card
 ---
 
+**NOTE: This tutorial is outdated and needs to be updated for the 2020 Game Engine. Please see the [Go Starter Snake](https://github.com/battlesnakeofficial/starter-snake-go) for instructions on getting started using Go and Heroku.**
+
 This document will allow you to start developing a Battlesnake snake AI using Golang programming language.
 
 ---
