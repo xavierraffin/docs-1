@@ -32,17 +32,17 @@ Are you able to showcase the one or more of the tech stacks that your company us
 
 ## Building a Bounty Snake
 
-Your Bounty Snake should be created and available on [play.battlesnake.com](http://play.battlesnake.com/) - that alone is enough to participate. Where you go from there is up to you, your team, and your creativity.
+Your Bounty Snake should be created and available on [play.battlesnake.com](https://play.battlesnake.com/) - that alone is enough to participate. Where you go from there is up to you, your team, and your creativity.
 
 ### Resources
 
-[Getting Started Guide]([https://docs.battlesnake.com/](https://docs.battlesnake.com/)) - A walkthrough of the steps in creating a new snake and getting it running on the site.
+[Getting Started Guide](https://docs.battlesnake.com/) - A walkthrough of the steps in creating a new snake and getting it running on the site.
 
-[Game Rules]([https://docs.battlesnake.com/rules](https://docs.battlesnake.com/rules)) - Discusses the rules on how snakes should function and interact with the game board.
+[Game Rules](https://docs.battlesnake.com/rules) - Discusses the rules on how snakes should function and interact with the game board.
 
-[Starter Snakes]([https://docs.battlesnake.com/starter-snakes](https://docs.battlesnake.com/starter-snakes)) - A collection of snake templates in a variety of languages designed fast track development.
+[Starter Snakes](https://docs.battlesnake.com/starter-snakes) - A collection of snake templates in a variety of languages designed fast track development.
 
-[Battlenake Official Github]([https://github.com/battlesnakeofficial](https://github.com/battlesnakeofficial)) - The repository for all open source Battlesnake code including starter snakes in a variety of languages and technologies.
+[Battlenake Official Github](https://github.com/battlesnakeofficial) - The repository for all open source Battlesnake code including starter snakes in a variety of languages and technologies.
 
 ### Bounty Snake Ideas
 
