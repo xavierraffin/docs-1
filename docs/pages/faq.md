@@ -38,7 +38,7 @@ if random(chance):
     spawn food in random empty square
 ```
 
-If you are interested in the implementation fo the algorithm, check out the [Rules](https://github.com/BattlesnakeOfficial/rules) project on GitHub.
+If you are interested in the implementation of the algorithm, check out the [Rules](https://github.com/BattlesnakeOfficial/rules) project on GitHub.
 
 ---
 
