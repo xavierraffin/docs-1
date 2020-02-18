@@ -1,18 +1,17 @@
+
 ---
 title: Writing Your First Snake in Python
 permalink: /tutorials/python
 layout: card
 ---
 
-<p class="alert alert-danger"><strong>NOTE: This tutorial is outdated and needs to be updated for the 2020 Game Engine. Please see the <a href="https://github.com/battlesnakeofficial/starter-snake-python">Python Starter Snake</a> for instructions on getting started using Python and Heroku.</strong></p>
-
-This document will allow you to start developing a Battlesnake snake AI on a Windows 10/8/7 computer using the Python programming language.
+This document will allow you to start developing a Battlesnake snake AI on a Windows computer using the Python programming language.
 
 ## Step 1 - Download and Install Software
 
 ### Step 1.1 - Git
 
-Git is a version command tool to allow us to "checkout" the NodeJS starter snake from Github.com.
+Git is a version command tool to allow us to "checkout" the Python starter snake from Github.com.
 
 Start by going to the [Git website](https://git-scm.com/downloads) and downloading the Windows version. Go to your Downloads folder, double-click on the the downloaded EXE file, and follow the installation steps. The installation will ask you a few questions during the process:
 
@@ -35,8 +34,9 @@ There are many tools out there that make Git a little more user friendly. One of
 ---
 
 ### Step 1.3 - Python
+Download and install the latest version of Python 3.8 (https://www.python.org/downloads/)
 
-Here you must decide whether you want to download [Python 2.7.x](https://www.python.org/downloads/release/python-2715/)
+**NOTE:** Make sure you check "Add Python 3.8 to PATH" or will have to add the python folder into your PATH environment variable manually.
 
 ## Step 2 - Battlesnake Game Engine
 
@@ -44,7 +44,7 @@ The Engine is the piece of software that talks to your snake and asks it what mo
 
 ### Step 2.1 - Download the Engine
 
-* Go to <https://github.com/battlesnakeofficial/engine/releases/latest> and download the `Windows_x86_64.zip` file.
+* Go to <https://github.com/battlesnakeio/engine/releases/latest> and download the `Windows_x86_64.zip` file.
 * Once downloaded, open Windows Explorer and navigate to your Downloads folder. Right-click and extract the downloaded ZIP file. It will extract into a folder of the same name.
 
 ---
@@ -93,7 +93,7 @@ Git Extensions:
 
 ### 3.2 - Install Python Dependencies
 
-You can also find similar instructions from **README.md** in your new repository
+You can also find similar instructions from README.md in your new repository
 
 * Go into your new starter snake folder
 * Shift + Right Click and select "Open command window here"
@@ -109,7 +109,7 @@ You can also find similar instructions from **README.md** in your new repository
 Now you should be able to run the starter snake from a command line (or git bash):
 
 ```cmd
-python app\main.py
+python run.py
 ```
 
 If everything has gone well so far, open your browser again to <http://localhost:3010> and add your snake by pasting in the snake url of `http://localhost:8080` and clicking "Start Game" and then "Play". Your snake will probably die within a couple of turns because it's not very smart.
@@ -128,4 +128,17 @@ Assuming you forked the repository, you should be able to submit changes locally
 
 ## Step 5 - Deploy it to the Internet
 
-Have a look at the `README.md` file in your starter-snake-node directory for instructions on deploying to Heroku.
+Have a look at the `README.md` file in your starter-snake-python directory for instructions on deploying to Heroku.
+
+A quick Heroku setup guide is included below:
+* Log into heroku (create a free account if you don't have one)
+* Click on New >> Create New App
+* Name your app and click "Create App"
+* Deployment method: Select Github
+* Connect your repository and branch -- If it is connected to github then it should be pretty easy to find your repository
+* Automatic Deploys: choose your branch and select "Enable Automatic Deploys" -- this will automatically rebuild and deploy your snake, everytime you submit changes to github
+* Manual Deploy: Select branch and hit "Deploy Branch" -- if you enabled automatic deploys, then you only need to deploy it this one time.
+* Once the app has successfully deployed, check at ```https://<your app name>.herokuapp.com```
+From a browser, all you will get is:
+**```Battlesnake documentation can be found at https://docs.battlesnake.com.```**
+...but this is a good sign! It means that your snake deployed successfully (you might still have bugs in it but at least the Heroku build worked).
