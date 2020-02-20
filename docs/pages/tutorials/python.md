@@ -1,4 +1,3 @@
-
 ---
 title: Writing Your First Snake in Python
 permalink: /tutorials/python
