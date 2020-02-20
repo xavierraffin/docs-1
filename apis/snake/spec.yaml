@@ -1,8 +1,8 @@
 openapi: "3.0.1"
 info:
   title: "Battlesnake Snake API"
-  version: "2018.03.beta"
-  description: "Battlesnake participants implement this webhook API to power their snake. See battlesnake.io for details."
+  version: "2020.01"
+  description: "Battlesnake participants implement this webhook API to power their snake. See play.battlesnake.com for details."
 paths:
   /start:
     post:
@@ -154,3 +154,8 @@ components:
           type: string
           enum: ["up", "down", "left", "right"]
           example: "right"
+        shout:
+          type: string
+          maxLength: 256
+          required: false
+          example: "I am moving left!"
