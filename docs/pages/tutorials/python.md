@@ -33,6 +33,8 @@ There are many tools out there that make Git a little more user friendly. One of
 ---
 
 ### Step 1.3 - Python
+**Important** As of Feb 2020, the Python starter snake runs on Python 3.7.6. It's ok to download and use Python 3.8 as long as you don't use any of the brand new features found in python 3.8 (most likely you won't).
+
 Download and install the latest version of Python 3.8 (https://www.python.org/downloads/)
 
 **NOTE:** Make sure you check "Add Python 3.8 to PATH" or will have to add the python folder into your PATH environment variable manually.
@@ -108,10 +110,10 @@ You can also find similar instructions from README.md in your new repository
 Now you should be able to run the starter snake from a command line (or git bash):
 
 ```cmd
-python run.py
+python app/server.py
 ```
 
-If everything has gone well so far, open your browser again to <http://localhost:3010> and add your snake by pasting in the snake url of `http://localhost:8080` and clicking "Start Game" and then "Play". Your snake will probably die within a couple of turns because it's not very smart.
+If everything has gone well so far, open your browser again to <http://localhost:3010> and add your snake by pasting in the snake url of <http://localhost:8080> and clicking "Start Game" and then "Play". Your snake will probably die within a couple of turns because it's not very smart.
 
 ## Step 4 - Make your snake smart
 
@@ -139,5 +141,5 @@ A quick Heroku setup guide is included below:
 * Manual Deploy: Select branch and hit "Deploy Branch" -- if you enabled automatic deploys, then you only need to deploy it this one time.
 * Once the app has successfully deployed, check at ```https://<your app name>.herokuapp.com```
 From a browser, all you will get is:
-**```Battlesnake documentation can be found at https://docs.battlesnake.com.```**
-...but this is a good sign! It means that your snake deployed successfully (you might still have bugs in it but at least the Heroku build worked).
+**```Your Battlesnake is alive!```**
+...and this is a good sign! It means that your snake deployed successfully (you might still have bugs in it but at least the Heroku build worked).
