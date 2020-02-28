@@ -92,6 +92,9 @@ components:
           type: array
           items:
             $ref: "#/components/schemas/Coords"
+        shout:
+          type: string
+          example: "Hello my name is Sneky Snek"
     Board:
       type: object
       properties:
