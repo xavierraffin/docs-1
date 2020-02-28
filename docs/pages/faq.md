@@ -21,7 +21,7 @@ You can build your snake using any technology you want! It doesn't have to be ma
 
 #### What cloud provider and region is play.battlesnake.com hosted in?
 
-The current game engine is hosted on Google Cloud Platform, in the `US-WEST1` (Oregon) region. It's possible, but unlikely this could change in the future. It's more likely that we'll expand the engine to include multiple and configurable regions.
+The current game engine is hosted on Amazon Web Services, in the `US-WEST-2` (Oregon) region. It's possible, but unlikely this could change in the future. It's more likely that we'll expand the engine to include multiple and configurable regions.
 
 ---
 
