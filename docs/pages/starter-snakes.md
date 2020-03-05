@@ -21,6 +21,7 @@ These Starter Snake projects are built and maintained by the Battlesnake team. W
 
 ## Community Starter Snakes
 
+* [Amazon Sagemaker ML Snake](https://github.com/awslabs/sagemaker-battlesnake-ai) by [AWS labs](https://github.com/awslabs)
 * [Kotlin Starter Snake](https://github.com/athenian-programming/starter-snake-kotlin) by [Athenian Programming](https://github.com/athenian-programming)
 * [Rust(y) Snake](https://github.com/mcraealex/rustysnake) by [McRaeAlex](https://github.com/McRaeAlex)
 * [AzureSnake (Node.js)](https://github.com/mcraealex/AzureSnake) by [McRaeAlex](https://github.com/McRaeAlex)
